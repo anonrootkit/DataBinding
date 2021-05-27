@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.recyclerView.adapter = listAdapter
+//        binding.recyclerView.adapter = listAdapter
 
     }
 

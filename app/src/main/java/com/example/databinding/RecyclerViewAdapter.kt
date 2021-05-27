@@ -18,7 +18,8 @@ class RecyclerViewAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.listItemBinding.textView.text = list[position]
+        holder.listItemBinding.textViewValue = list[position]
+        holder.listItemBinding.executePendingBindings()
     }
 
     override fun getItemCount(): Int {
